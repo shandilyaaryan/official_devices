@@ -86,6 +86,10 @@ This file should contain every team member working on **Pixelstar** in the given
 | `telegram` | Member's telegram profile | `optional` |
 | `xda`      | Member's XDA profile      | `optional` |
 
+
+<!--START_SECTION:devices-->
+<!--END_SECTION:devices-->
+
 1. [Device stability requirements](requirements.md)
 2. [Maintainer requirements](maintainerreq.md)
 3. To Apply Message [here](https://telegram.me/Project_PixelStar)
