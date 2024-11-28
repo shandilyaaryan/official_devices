@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Project-PixelStar/manifest/14-qpr3/Banner.png" />
+</p>
+
 # Official Devices
 
 This is our repo where all stuff related to official devices is stored.
