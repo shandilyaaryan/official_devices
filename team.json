@@ -5,9 +5,9 @@
       "role": "Founder & Ex-Lead Developer",
       "socials": {
         "github": "Mudit200408",
-        "telegram": "Mudit1808",
+        "telegram": "Mudit1808"
       }
-    }
+    },
         {
       "name": "Amrita Das",
       "role": "Lead Developer",
@@ -16,7 +16,7 @@
         "telegram": "Amritokun",
         "xda": ""
       }
-    }
+    },
         {
       "name": "Kshitij Bhale",
       "role": "Designer",
@@ -25,5 +25,14 @@
         "telegram": "Stock_Sucks",
         "xda": ""
       }
+    },
+    {
+    "name": "Kamlesh Patel",
+    "role": "Core Team",
+    "socials": {
+      "github": "GokuSan2",
+      "telegram": "kamleshpatidar",
+      "xda": ""
     }
+  }
 ]
