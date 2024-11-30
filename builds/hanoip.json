@@ -1,0 +1,18 @@
+{
+        "response": [
+                {
+                        "maintainer": "Vivin Varma",
+                        "oem": "Motorola",
+                        "device": "Moto G60 / G40 Fusion",
+                        "version": "3.5",
+                        "filename": "pixelstar-3.5-uday-hanoip-official-1451-20241126.zip",
+                        "download": "https://sourceforge.net/projects/pixelstar/files/hanoip/uday/pixelstar-3.5-uday-hanoip-official-1451-20241126.zip/download",
+                        "timestamp": 1732622640,
+                        "md5": "a271fb249351b80cf4f67f00c42ab22c",
+                        "sha256": "2ae70d3562c6cbc24017dbf56b6b846ffc0072b516fb557cd59a2799247fc3c7",
+                        "size": 2400948213,
+                        "forum": "https://xdaforums.com/f/moto-g40-g60.12237/",
+                        "telegram": "motog60"
+                }
+        ]
+}

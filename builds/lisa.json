@@ -1,0 +1,18 @@
+{
+  "response": [
+    {
+      "maintainer": "Zaid Khan",
+      "oem": "Xiaomi",
+      "device": "Xiaomi 11 Lite 5G NE / Mi 11 LE",
+      "version": "3.5",
+      "filename": "pixelstar-3.5-uday-lisa-official-1854-20241113.zip",
+      "download": "https://sourceforge.net/projects/pixelstar/files/lisa/uday/pixelstar-3.5-uday-lisa-official-1854-20241113.zip/download",
+      "timestamp": 1731523986,
+      "md5": "2ba4f97091260b512ba752f6be8f8acc",
+      "sha256": "6127375ba3774001fbdbd5bd76b1dfec82f978e7",
+      "size": 2715531057,
+      "forum": "https://xdaforums.com/f/",
+      "telegram": "suvojeet_sengupta"
+    }
+  ]
+}

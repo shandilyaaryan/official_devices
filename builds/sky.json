@@ -1,0 +1,18 @@
+{
+  "response": [
+    {
+      "maintainer": "Suvojeet Sengupta",
+      "oem": "Xiaomi",
+      "device": "Redmi 12 5G / Poco M6 Pro 5G",
+      "version": "3.5",
+      "filename": "pixelstar-3.5-uday-sky-official-1106-20241112.zip",
+      "download": "https://sourceforge.net/projects/pixelstar/files/sky/uday/pixelstar-3.5-uday-sky-official-1106-20241112.zip/download",
+      "timestamp": 1731345324,
+      "md5": "b2c004c737733256d371589ed2eb2c5e",
+      "sha256": "d0bf81d054150f00fbb9379bd85a51cbebc6fb0eec1605354ac5ec6d3b05509d",
+      "size": 2339498073,
+      "forum": "https://xdaforums.com/t/rom-14-0-sky-official-pixelstar-3-5-12-11-2024.4705592/",
+      "telegram": "suvojeet_sengupta"
+    }
+  ]
+}

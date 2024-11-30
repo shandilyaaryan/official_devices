@@ -1,0 +1,18 @@
+{
+            "response": [
+                {
+                        "maintainer": "Thereache",
+                        "oem": "Xiaomi",
+                        "device": "Redmi Note 12 Pro SE 5G / Poco X5 Pro 5G",
+                        "version": "3.5",
+                        "filename": "pixelstar-3.5-uday-redwood-official-1032-20241112.zip",
+                        "download": "https://sourceforge.net/projects/pixelstar/files/redwood/uday/pixelstar-3.5-uday-redwood-official-1032-20241112.zip/download",
+                        "timestamp": 1731405569,
+                        "md5": "97516669c5e3756288bf36ee02a9610f",
+                        "sha256": "d12c9efec2195a97a1f8112f0fc8ee058669bef4",
+                        "size": 2626983648,
+                        "forum": "https://xdaforums.com/f/",
+                        "telegram": "RushItz"
+                }
+        ]
+}

@@ -1,0 +1,18 @@
+{
+            "response": [
+                {
+                        "maintainer": "REX",
+                        "oem": "Xiaomi",
+                        "device": "Redmi Note 11E Pro/Redmi Note 11 Pro 5G/POCO X4 Pro 5G",
+                        "version": "3.5",
+                        "filename": "pixelstar-3.5-uday-veux-official-0712-20241123.zip",
+                        "download": "https://sourceforge.net/projects/pixelstar/files/veux/uday/pixelstar-3.5-uday-veux-official-0712-20241123.zip/download",
+                        "timestamp": 1732345963,
+                        "md5": "4871126b574099da0ef010c569a3f4e9",
+                        "sha256": "36c71b88ded30be68509c0c985fc2364109e4e51",
+                        "size": 2746331445,
+                        "forum": "https://xdaforums.com/f/",
+                        "telegram": "Prathamk7"
+                }
+        ]
+}

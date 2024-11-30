@@ -8,25 +8,11 @@
       "active": false
     },
     {
-      "codename": "lemonades",
-      "vendor": "OnePlus",
-      "model": "OnePlus 9R",
-      "maintainer_name": "Tanuj Dhama",
-      "active": false
-    },
-    {
       "codename": "peridot",
       "vendor": "Xiaomi",
       "model": "Poco F6 / Redmi Turbo 3",
       "maintainer_name": "Ramshell688",
       "active": true
-    },
-    {
-      "codename": "camellia",
-      "vendor": "Redmi",
-      "model": "Redmi Note 10 ",
-      "maintainer_name": "Noah",
-      "active": false
     },
     {
 	"codename": "hanoip",
@@ -36,53 +22,18 @@
 	"active": true
     },
     {
-      "codename": "stone",
-      "vendor": "Poco",
-      "model": "Poco X5 5g",
-      "maintainer_name": "taki",
-      "active": false
-        },
-    {
-      "codename": "sakura",
-      "vendor": "Redmi",
-      "model": "Redmi 6 Pro",
-      "maintainer_name": "achu",
-      "active": false
-        },
-    {
-      "codename": "cupidr",
-      "vendor": "Realme",
-      "model": "Realme GT 5G",
-      "maintainer_name": "MNoxx74",
-      "active": false
-        },
-    {
       "codename": "spartan",
       "vendor": "realme",
       "model": "realme GT NEO 3T",
       "maintainer_name": "YP",
       "active": true
         },
-    {
-      "codename": "marble",
+   {
+      "codename": "spes",
       "vendor": "Xiaomi",
-      "model": "Poco F5 / Redmi Note 12T",
-      "maintainer_name": "Chaitanya",
-      "active": false
-        },
-    {
-      "codename": "miatoll",
-      "vendor": "Xiaomi",
-      "model": "Redmi Note 9S / 9 Pro / 9 Pro Max / 10 Lite / POCO M2 Pro",
-      "maintainer_name": "westpain",
-      "active": false
-        },
-    {
-      "codename": "ice",
-      "vendor": "Realme",
-      "model": "Realme 9 Speed edition 5G",
-      "maintainer_name": "Abhayabhi4721",
-      "active": false
+      "model": "Redmi Note 11 / Redmi Note 11 NFC",
+      "maintainer_name": "JASSI V",
+      "active": true
         },
     {
       "codename": "veux",

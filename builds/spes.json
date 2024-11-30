@@ -1,0 +1,18 @@
+{
+  "response": [
+    {
+      "maintainer": "JASSI V",
+      "oem": "Xiaomi",
+      "device": "Redmi Note 11/Redmi Note 11 NFC",
+      "version": "3.5",
+      "filename": "pixelstar-3.5-uday-spes-official-1254-20241113.zip",
+      "download": "https://sourceforge.net/projects/pixelstar/files/spes/uday/pixelstar-3.5-uday-spes-official-1254-20241113.zip/download",
+      "timestamp": 1731502437,
+      "md5": "6c9fcd52e98c77ff1ccd3af318bb3734",
+      "sha256": "35683d2e1ace316b0fee63dbcb8f1c7d3b4f3e85",
+      "size": 2465283488,
+      "forum": "https://xdaforums.com/f",
+      "telegram": "JassiV07"
+    }
+  ]
+}

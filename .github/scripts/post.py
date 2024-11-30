@@ -65,7 +65,7 @@ telegraph = TelegraphHelper(
 )
 
 # File directories
-jsonDir = "devices"
+jsonDir = "builds"
 idDir = ".github/scripts"
 
 # Store IDs in a file to compare
