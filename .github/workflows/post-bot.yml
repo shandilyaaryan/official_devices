@@ -3,14 +3,16 @@ name: Rom Poster Bot
 on:
   push:
     paths:
-      - "devices/*.json"
-
+      - "builds/*.json"
   workflow_dispatch:
+
+permissions: write-all
 
 env:
   GitHubMail: "projectpixelstar@gmail.com"
   GitHubName: "Projectpixelstarbot"
   GitHubToken: ${{ secrets.GH_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
   BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
   CHAT_ID: ${{ secrets.CHAT_ID }}
   PRIV_CHAT_ID: ${{ secrets.PRIV_CHAT_ID }}
@@ -21,28 +23,65 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Check out the repository
       - uses: actions/checkout@v3
 
+      # Install required Python dependencies
       - name: Install Dependencies
-        run: sudo pip install pyTelegramBotAPI noobstuffs PyGithub
-
-      - name: Set Git Configs & Secrets
         run: |
-          git config --global user.email ${GitHubMail}
-          git config --global user.name ${GitHubName}
+          python3 -m pip install --upgrade pip
+          pip3 install pyTelegramBotAPI noobstuffs PyGithub
+
+
+      # Configure Git credentials and settings
+      - name: Set Git Configs
+        run: |
+          git config --global user.email "${{ env.GitHubMail }}"
+          git config --global user.name "${{ env.GitHubName }}"
           git config pull.rebase true
           git config --global color.ui true
           git config --global credential.helper store
-          echo "https://${GitHubName}:${GitHubToken}@github.com" > ~/.git-credentials
+          echo "https://${{ env.GitHubName }}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
 
+      # Check and stash all changes (including untracked)
+      - name: Stash Changes Before Pull
+        run: |
+          echo "Checking for unstaged changes..."
+          git status
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Unstaged changes detected. Stashing changes..."
+            git stash --include-untracked
+          else
+            echo "No unstaged changes detected."
+          fi
+
+      # Pull latest changes from the repository
+      - name: Pull Latest Changes
+        run: |
+          echo "Pulling latest changes..."
+          git fetch --all
+          git pull --rebase
+
+      # Apply stashed changes (if applicable)
+      - name: Reapply Stashed Changes (if applicable)
+        run: |
+          if git stash list | grep -q "stash@{0}"; then
+            echo "Reapplying stashed changes..."
+            git stash pop
+          else
+            echo "No stashed changes to reapply."
+          fi
+
+      # Run the Python bot script
       - name: Run RomPosterBot
-        run: sudo -E python3 .github/scripts/post.py
+        run: |
+          python3 .github/scripts/post.py
 
+      # Commit and Push Changes
       - name: Commit and Push Changes
         run: |
-          git fetch && git pull
           COMMIT_MESSAGE=$(cat commit_mesg.txt)
           rm commit_mesg.txt
           curl -sL "https://raw.githubusercontent.com/hipexscape/Scripts/tsm/commit_id.sh" | bash
           git add . && git commit -sm "$COMMIT_MESSAGE"
-          git push origin
+          git push origin --force

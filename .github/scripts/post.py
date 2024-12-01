@@ -154,10 +154,6 @@ def get_info(ID):
             "telegram": TELEGRAM
         }
 
-# Prepare function for posting message in channel
-def send_post(chat_id, image, caption):
-    return bot.send_photo(chat_id=chat_id, photo=image, caption=caption)
-
 # Prepare message format for channel
 def message_content(information):
     msg = ""
@@ -166,15 +162,42 @@ def message_content(information):
     msg += f"<b>Maintainer:</b> <a href='https://t.me/{information['telegram']}'>{information['maintainer']}</a>\n"
     msg += f"<b>Rom Version:</b> <code>{information['version']}</code>\n"
     msg += f"<b>Build Date:</b> <code>{information['datetime']} UTC</code>\n\n"
-    msg += f"<b>Download:</b> <a href='{information['download']}'>GAPPS</a>\n\n"
     msg += f"<b>Source Changelogs:</b> <a href='https://github.com/Project-PixelStar/official_devices/blob/14/changelogs/pixelstar.md'>Here</a>\n"
     msg += f"<b>Device Changelogs:</b> <a href='https://github.com/Project-PixelStar/official_devices/blob/14/changelogs/{information['codename']}.md'>Here</a>\n\n"
     msg += f"<b>Installation Guide:</b> <a href='https://github.com/Project-PixelStar/official_devices/tree/14/instructions/{information['codename']}.md'>Here</a>\n"
-    msg += f"<b>Screenshots:</b> <a href='https://t.me/pixelstarss'>Here</a>\n"
-    msg += f"<b>XDA Forum:</b> <a href='{information['xda']}'>Here</a>\n\n"
     msg += f"<b>MD5:</b> <code>{information['md5']}</code>\n"
     return msg
+    
+# Add Buttons
+def create_buttons(information):
+    buttons = InlineKeyboardMarkup(row_width=3)
+    
+    # Buttons for Channel, XDA, Download, and Support
+    button_download = InlineKeyboardButton("Download", url=information['download'])
+    button_channel = InlineKeyboardButton("Channel", url="https://t.me/pixelstarchannel")  
+    button_xda = InlineKeyboardButton("XDA", url=information['xda'])
+    button_support = InlineKeyboardButton("Community Chat", url="https://t.me/Project_PixelStar")
+    button_donate = InlineKeyboardButton("Donate", url="https://t.me/pixelstarchannel/683")
+    button_screenshot = InlineKeyboardButton("Screenshots", url="https://t.me/pixelstarss")
 
+
+    # Add all buttons to the InlineKeyboardMarkup with specified row width
+    buttons.add(button_download,button_donate)
+    buttons.add(button_channel, button_xda)
+    buttons.add(button_support, button_screenshot)
+
+    
+    return buttons
+
+# Function to send the post with the buttons
+def send_post(chat_id, image, caption, buttons):
+    return bot.send_photo(
+        chat_id=chat_id, 
+        photo=image, 
+        caption=caption, 
+        reply_markup=buttons  # This will send the buttons
+    )
+    
 # Send updates to channel and commit changes in repo
 def tg_message():
     commit_message = "Update new IDs and push OTA"
@@ -187,19 +210,20 @@ def tg_message():
         print(f"IDs Changed:\n{get_diff(get_new_id(), get_old_id())}\n\n")
         for devices in get_diff(get_new_id(), get_old_id()):
             info = get_info(devices)
+            buttons = create_buttons(info)  # Generate buttons here
             with open(BANNER_PATH, "rb") as image:
-                send_post(CHAT_ID, image, message_content(info))
+                send_post(CHAT_ID, image, message_content(info), buttons)
             commit_description += f"- {info['device_name']} ({info['codename']})\n"
             sleep(5)
     update(get_new_id())
     open("commit_mesg.txt", "w+").write(f"Pixelstar: {commit_message} [BOT]\n\n{commit_description}")
 
 # Prepare function for posting message in private group
-def send_log(chat_id, text, button):
+def send_log(chat_id, text, buttons):
     return bot.send_message(
         chat_id=chat_id,
         text=text,
-        reply_markup=button,
+        reply_markup=buttons,
         disable_web_page_preview=True
     )
 
@@ -256,7 +280,7 @@ def tg_log():
     msg += f"<b>Updated during current month:</b> <code>{str(len(Updated))}</code><br>"
     msg += f"<b>Not Updated during current month:</b> <code>{str(len(YetToUpdate))}</code><br><br>"
     msg += f"<b>Information as on:</b> <code>{str(datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M'))} hours (UTC)</code>"
-    text = f"<b>Pixel Project Devices (v{PIXELSTAR_VERSION_CHECK}) Update Status</b>\n\n"
+    text = f"<b>Project-Pixelstar Devices (v{PIXELSTAR_VERSION_CHECK}) Update Status</b>\n\n"
     text += f"<b>Total Official Devices:</b> <code>{str(len(get_devices()))}</code>\n"
     text += f"<b>Updated during current month:</b> <code>{str(len(Updated))}</code>\n"
     text += f"<b>Not Updated during current month:</b> <code>{str(len(YetToUpdate))}</code>\n"
