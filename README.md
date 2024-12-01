@@ -92,6 +92,29 @@ This file should contain every team member working on **Pixelstar** in the given
 
 
 <!--START_SECTION:devices-->
+## Motorola Devices
+```
+Moto G60 / G40 Fusion (hanoip) supported by Vivin Varma
+```
+
+## Realme Devices
+```
+Realme GT NEO 3T (spartan) supported by YP
+```
+
+## Xiaomi Devices
+```
+POCO F6 Pro / Redmi K70 (vermeer) supported by Lunark :3(ByteWave)
+Poco F6 / Redmi Turbo 3 (peridot) supported by Ramshell688
+Redmi 12 5G / Poco M6 Pro 5G (sky) supported by Suvojeet Sengupta
+Redmi 12 5G / Poco M6 Pro 5G (spes) supported by JASSI V
+Redmi K40S/POCO F4 (munch) supported by Mudit
+Redmi Note 10 Pro/Redmi Note 12 Pro 4G (sweet) supported by Goku San
+Redmi Note 11E Pro/Redmi Note 11 Pro 5G/POCO X4 Pro 5G (veux) supported by REX
+Redmi Note 12 Pro SE 5G / Poco X5 Pro 5G (redwood) supported by Thereache
+Redmi Note 13 Pro 5G/Poco x6 5G (garnet) supported by Mohammad kibria
+Xiaomi 11 Lite 5G NE / Mi 11 LE (lisa) supported by Zaid Khan
+```
 <!--END_SECTION:devices-->
 
 1. [Device stability requirements](requirements.md)
