@@ -15,7 +15,7 @@ Follow below folder structure before adding/modifying any data.
 | Directory       | Notes                                                                                                 |
 | --------------- | ----------------------------------------------------------------------------------------------------- |
 | `/changelogs`   | Device changelog goes here. See [`/changelogs/README.md`](./changelogs/README.md) for more details.   |
-| `/devices`      | Device information goes here. See [`/devices/README.md`](./devices/README.md) for more details.       |
+| `/builds`      | Device information goes here. See [`/devices/README.md`](./builds/README.md) for more details.       |
 | `/instructions` | Flashing instructions for device.                                                                     |
 | `/images`       | Device images go here, in **PNG** format. Filename must be the device codename e.g., `beryllium.png`. |
 
@@ -90,7 +90,7 @@ This file should contain every team member working on **Pixelstar** in the given
 | `telegram` | Member's telegram profile | `optional` |
 | `xda`      | Member's XDA profile      | `optional` |
 
-
+## Officially Supported Devices
 <!--START_SECTION:devices-->
 ## Motorola Devices
 ```
