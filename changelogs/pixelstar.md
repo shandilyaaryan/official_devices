@@ -1,5 +1,21 @@
 # Source Changelog #
 
+## v3.6-LTS-Uday ##
+ NOTE:
+ 1. With 3.6 We Are Moving To Long Term Support Till Android 16 , Android 15 Coming Soon
+ 2. Due My Exams There is kinda less changes than any other months 
+ 3. This Update Won't be visible In Updater . So, Dirty Flash From Recovery
+ 
+ Changes: 
+- Merged December Patch (credits: [Lineage OS](https://github.com/lineageos))
+- Fixed Clone Apps
+- Dropped Pixel Framework
+- Dropped Quick Tap
+- Added Enable 5G Toggle in Internet QS tiles
+- Nuked Game Dashboard
+- Various Optimization and under the hood changes
+- Updated Wallpaper 
+
 ## v3.5-Uday ##
 - Merged November Patch (credits: [Lineage OS](https://github.com/lineageos))
 - Fix Selinux Permissive Visual Bug
