@@ -11,6 +11,19 @@ Device maintainer: Mohammad Kibria
 - Miuicamera Included
 - Don't report bugs with custom kernels
 
+# v3.6-LTS - uday :
+- Add thermal parts
+- add per app refresh rate parts
+- add clear speaker parts
+- Improve cpu Governor 
+- Improve runtime cpu set
+- Add input boost for cpu and power key
+- Adapt to xiaomi vibrator effects
+- Change adreno blobs to 615.86
+- Fix HDR issue 
+- A lot of fixes and Improvement
+- Increase system stability and smoothness 
+
 # v3.5 - Uday - Hotfix :
 - Update blobs from V816.0.17.0.UNRMIXM
 - Upgrade kernel from V816.0.17.0.UNRMIXM
