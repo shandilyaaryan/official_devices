@@ -23,5 +23,5 @@ Installation:
 8. If upon reboot it gets stuck in bootanimation reboot manually and that's it
 
 # Downloads:
-* ROM: [Download](https://sourceforge.net/projects/pixelstar/files/vermeer/)
-* Images: [Download](https://sourceforge.net/projects/pixelstar/files/vermeer/images)
+* ROM: [Download](https://sourceforge.net/projects/pixelstar/files/vermeer/uday)
+* Images: [Download](https://sourceforge.net/projects/pixelstar/files/vermeer/uday/images)

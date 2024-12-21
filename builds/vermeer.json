@@ -1,18 +1,19 @@
 {
-  "response": [
-    {
-      "maintainer": "Lunark :3(ByteWave)",
-      "oem": "Xiaomi",
-      "device": "POCO F6 Pro / Redmi K70", 
-      "version": "3.5",
-      "filename": "pixelstar-3.5-uday-vermeer-official-1155-20241118.zip",
-      "download": "https://sourceforge.net/projects/pixelstar/files/vermeer/uday/pixelstar-3.5-uday-vermeer-official-1155-20241118.zip/download",
-      "timestamp": 1731930859,
-      "md5": "e896453dad071c6c71ded51009db3181",
-      "sha256": "1927e6e1828999d0f99b68fd465f9c42d05ef70962220daa48e29436558826ad",
-      "size": 4513020592,
-      "forum": "https://xdaforums.com/t/rom-14-0-vermeer-official-pixelstar-3-5-18-11-2024.4705600/", 
-      "telegram": "ByteWave1014"
-    }
-  ]
+        "response": [
+                {
+                        "maintainer": "Lunark :3(ByteWave)",
+                        "oem": "Xiaomi",
+                        "device": "POCO F6 Pro / Redmi K70",
+                        "version": "3.6-LTS",
+                        "filename": "pixelstar-3.6-LTS-uday-vermeer-official-2022-20241220.zip",
+                        "download": "https://sourceforge.net/projects/pixelstar/files/vermeer/uday/pixelstar-3.6-LTS-uday-vermeer-official-2022-20241220.zip/download",
+                        "timestamp": 1734726130,
+                        "md5": "80d8e39b8fca200c16b1f8d4f5e91d6a",
+                        "sha256": "5d32ef0ab0897e7c8d0950ac1454a48e09ceaf3f8dea66e24dda8622d9d0a1f9",
+                        "size": 4453015106,
+                        "buildtype": "Monthly",
+                        "forum": "https://xdaforums.com/t/rom-14-0-vermeer-official-pixelstar-3-6-lts-21-12-2024.4705600/",
+                        "telegram": "https://t.me/ByteWave1014"
+                }
+        ]
 }

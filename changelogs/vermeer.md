@@ -4,6 +4,12 @@ Device codename: vermeer
 Device maintainer: Lunark :3
 ```
 
+# Uday 3.6-LTS Update
+- December Securty pacth
+- Fix pocket mode
+- Kernel prebuild updated 02/12/2024
+- Fix fingerprint remains on after unlocking
+
 # Uday 3.5 Update
 - Initial official release
 - HyperOs Camera Included
