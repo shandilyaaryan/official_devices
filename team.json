@@ -1,57 +1,66 @@
 {
-  "team": [
-    {
-      "name": "Mudit",
-      "role": "Founder & Ex-Lead Developer",
-      "socials": {
-        "github": "Mudit200408",
-        "telegram": "Mudit1808"
-      }
-    },
+    "team": [
         {
-      "name": "Amrita Das",
-      "role": "Lead Developer",
-      "socials": {
-        "github": "takixamru",
-        "telegram": "Amritokun",
-        "xda": ""
-      }
-    },
+            "name": "Mudit",
+            "role": "Founder & Ex-Lead Developer",
+            "socials": {
+                "github": "Mudit200408",
+                "telegram": "Mudit1808"
+            }
+        },
         {
-      "name": "Kshitij Bhale",
-      "role": "Designer",
-      "socials": {
-        "github": "kshitij-bhale",
-        "telegram": "Stock_Sucks",
-        "xda": ""
-      }
-    },
-    {
-    "name": "Kamlesh Patel",
-    "role": "Core Team",
-    "socials": {
-      "github": "GokuSan2",
-      "telegram": "kamleshpatidar",
-      "xda": ""
-    }
-  },
-    {
-      "name": "TanbirS",
-      "role": "Designer (AFK)",
-      "socials": {
-        "github": "tanbirs01",
-        "telegram": "TanbirS01",
-        "xda": ""
-      }
-    },
-    {
-      "name": "Naoko Shoto",
-      "role": "Designer",
-      "socials": {
-        "github": "naokoshoto",
-        "telegram": "naokoshoto",
-        "xda": "naokoshoto"
-      }
-    }
-  ]
+            "name": "Amrita Das",
+            "role": "Lead Developer",
+            "socials": {
+                "github": "takixamru",
+                "telegram": "Amritokun",
+                "xda": ""
+            }
+        },
+        {
+            "name": "Kshitij Bhale",
+            "role": "Designer",
+            "socials": {
+                "github": "kshitij-bhale",
+                "telegram": "Stock_Sucks",
+                "xda": ""
+            }
+        },
+        {
+            "name": "Kamlesh Patel",
+            "role": "Core Team",
+            "socials": {
+                "github": "GokuSan2",
+                "telegram": "kamleshpatidar",
+                "xda": ""
+            }
+        },
+        {
+            "name": "TanbirS",
+            "role": "Designer (AFK)",
+            "socials": {
+                "github": "tanbirs01",
+                "telegram": "TanbirS01",
+                "xda": ""
+            }
+        },
+        {
+            "name": "Naoko Shoto",
+            "role": "Designer",
+            "socials": {
+                "github": "naokoshoto",
+                "telegram": "naokoshoto",
+                "xda": "naokoshoto"
+            }
+        },
+        {
+            "name": "Aryan Shandilya",
+            "role": "Web Developer",
+            "socials": {
+                "github": "shandilyaaryan",
+                "telegram": "shandilyaaryan",
+                "xda": ""
+            }
+        }
+    ]
 }
